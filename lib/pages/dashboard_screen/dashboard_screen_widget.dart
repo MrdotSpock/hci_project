@@ -153,7 +153,7 @@ class _DashboardScreenWidgetState extends State<DashboardScreenWidget>
                                         const EdgeInsetsDirectional.fromSTEB(
                                             0.0, 0.0, 0.0, 4.0),
                                     child: Text(
-                                      'Welcome, User!',
+                                      'Welcome, HCI Staff!',
                                       style: FlutterFlowTheme.of(context)
                                           .headlineMedium
                                           .override(
@@ -251,7 +251,7 @@ class _DashboardScreenWidgetState extends State<DashboardScreenWidget>
                                 yData: List.generate(
                                     random_data.randomInteger(10, 10),
                                     (index) =>
-                                        random_data.randomInteger(0, 100)),
+                                        random_data.randomInteger(0, 200)),
                                 settings: LineChartBarData(
                                   color: FlutterFlowTheme.of(context).primary,
                                   barWidth: 2.0,
@@ -271,7 +271,7 @@ class _DashboardScreenWidgetState extends State<DashboardScreenWidget>
                                 yData: List.generate(
                                     random_data.randomInteger(20, 20),
                                     (index) =>
-                                        random_data.randomInteger(0, 200)),
+                                        random_data.randomInteger(0, 100)),
                                 settings: LineChartBarData(
                                   color: FlutterFlowTheme.of(context).secondary,
                                   barWidth: 2.0,

@@ -74,10 +74,10 @@ class _SubtaskWidgetState extends State<SubtaskWidget> {
                         borderRadius: BorderRadius.circular(4.0),
                       ),
                     ),
-                    unselectedWidgetColor: FlutterFlowTheme.of(context).primary,
+                    unselectedWidgetColor: Colors.white,
                   ),
                   child: Checkbox(
-                    value: _model.checkboxValue ??= widget.isSelected,
+                    value: widget.isSelected,
                     onChanged: true
                         ? null
                         : (newValue) async {
@@ -91,11 +91,17 @@ class _SubtaskWidgetState extends State<SubtaskWidget> {
                     checkColor: true
                         ? FlutterFlowTheme.of(context).primary
                         : FlutterFlowTheme.of(context).info,
+                    fillColor: MaterialStateProperty.resolveWith<Color>(
+                      (Set<MaterialState> states) {
+                        return Colors.white;
+                      },
+                    ),
                   ),
                 ),
               Expanded(
                 child: Padding(
-                  padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 12.0, 0.0),
+                  padding:
+                      const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 12.0, 0.0),
                   child: Column(
                     mainAxisSize: MainAxisSize.max,
                     mainAxisAlignment: MainAxisAlignment.center,
@@ -109,8 +115,8 @@ class _SubtaskWidgetState extends State<SubtaskWidget> {
                             ),
                       ),
                       Padding(
-                        padding:
-                            const EdgeInsetsDirectional.fromSTEB(0.0, 4.0, 0.0, 0.0),
+                        padding: const EdgeInsetsDirectional.fromSTEB(
+                            0.0, 4.0, 0.0, 0.0),
                         child: Text(
                           'A short history into what UX design is and the history of it.',
                           style:

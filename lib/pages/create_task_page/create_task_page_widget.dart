@@ -84,7 +84,8 @@ class _CreateTaskPageWidgetState extends State<CreateTaskPageWidget> {
           ),
           actions: [
             Padding(
-              padding: const EdgeInsetsDirectional.fromSTEB(0.0, 8.0, 12.0, 8.0),
+              padding:
+                  const EdgeInsetsDirectional.fromSTEB(0.0, 8.0, 12.0, 8.0),
               child: FlutterFlowIconButton(
                 borderColor: FlutterFlowTheme.of(context).alternate,
                 borderRadius: 12.0,
@@ -226,8 +227,6 @@ class _CreateTaskPageWidgetState extends State<CreateTaskPageWidget> {
                                     controller: _model.descriptionController,
                                     focusNode: _model.descriptionFocusNode,
                                     autofocus: true,
-                                    textCapitalization:
-                                        TextCapitalization.words,
                                     obscureText: false,
                                     decoration: InputDecoration(
                                       labelText: 'Description...',
@@ -328,10 +327,11 @@ class _CreateTaskPageWidgetState extends State<CreateTaskPageWidget> {
                                       final datePickedDate =
                                           await showDatePicker(
                                         context: context,
-                                        initialDate:
-                                            ((widget.taskDeadline ?? getCurrentTimestamp) ??
-                                                DateTime.now()),
-                                        firstDate: ((widget.taskDeadline ?? getCurrentTimestamp) ??
+                                        initialDate: ((widget.taskDeadline ??
+                                                getCurrentTimestamp) ??
+                                            DateTime.now()),
+                                        firstDate: ((widget.taskDeadline ??
+                                                getCurrentTimestamp) ??
                                             DateTime.now()),
                                         lastDate: DateTime(2050),
                                         builder: (context, child) {
@@ -399,12 +399,11 @@ class _CreateTaskPageWidgetState extends State<CreateTaskPageWidget> {
                                         ),
                                       ),
                                       child: Align(
-                                        alignment:
-                                            const AlignmentDirectional(-1.0, 0.0),
+                                        alignment: const AlignmentDirectional(
+                                            -1.0, 0.0),
                                         child: Padding(
-                                          padding:
-                                              const EdgeInsetsDirectional.fromSTEB(
-                                                  12.0, 0.0, 0.0, 0.0),
+                                          padding: const EdgeInsetsDirectional
+                                              .fromSTEB(12.0, 0.0, 0.0, 0.0),
                                           child: Text(
                                             () {
                                               if (_model.datePicked != null) {
@@ -451,7 +450,8 @@ class _CreateTaskPageWidgetState extends State<CreateTaskPageWidget> {
                                       child: wrapWithModel(
                                         model: _model.brakeDownLevelPickerModel,
                                         updateCallback: () => setState(() {}),
-                                        child: const BrakeDownLevelPickerWidget(),
+                                        child:
+                                            const BrakeDownLevelPickerWidget(),
                                       ),
                                     ),
                                   ),
@@ -472,8 +472,8 @@ class _CreateTaskPageWidgetState extends State<CreateTaskPageWidget> {
                   ),
                   decoration: const BoxDecoration(),
                   child: Padding(
-                    padding:
-                        const EdgeInsetsDirectional.fromSTEB(16.0, 12.0, 16.0, 12.0),
+                    padding: const EdgeInsetsDirectional.fromSTEB(
+                        16.0, 12.0, 16.0, 12.0),
                     child: FFButtonWidget(
                       onPressed: !((_model.taskController.text != '') &&
                               (_model.descriptionController.text != '') &&
@@ -509,8 +509,8 @@ class _CreateTaskPageWidgetState extends State<CreateTaskPageWidget> {
                         height: 48.0,
                         padding: const EdgeInsetsDirectional.fromSTEB(
                             24.0, 0.0, 24.0, 0.0),
-                        iconPadding:
-                            const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                        iconPadding: const EdgeInsetsDirectional.fromSTEB(
+                            0.0, 0.0, 0.0, 0.0),
                         color: FlutterFlowTheme.of(context).primary,
                         textStyle:
                             FlutterFlowTheme.of(context).titleSmall.override(

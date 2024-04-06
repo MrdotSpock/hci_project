@@ -134,8 +134,8 @@ class _TasksBrokenDownScreenWidgetState
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Padding(
-                        padding:
-                            const EdgeInsetsDirectional.fromSTEB(24.0, 0.0, 0.0, 0.0),
+                        padding: const EdgeInsetsDirectional.fromSTEB(
+                            24.0, 0.0, 0.0, 0.0),
                         child: Text(
                           valueOrDefault<String>(
                             widget.taskTitle,
@@ -150,8 +150,8 @@ class _TasksBrokenDownScreenWidgetState
                         ),
                       ),
                       Padding(
-                        padding:
-                            const EdgeInsetsDirectional.fromSTEB(24.0, 4.0, 0.0, 0.0),
+                        padding: const EdgeInsetsDirectional.fromSTEB(
+                            24.0, 4.0, 0.0, 0.0),
                         child: Text(
                           'Breakdown',
                           textAlign: TextAlign.start,
@@ -168,8 +168,8 @@ class _TasksBrokenDownScreenWidgetState
                         color: FlutterFlowTheme.of(context).alternate,
                       ),
                       Padding(
-                        padding:
-                            const EdgeInsetsDirectional.fromSTEB(24.0, 4.0, 0.0, 0.0),
+                        padding: const EdgeInsetsDirectional.fromSTEB(
+                            24.0, 4.0, 0.0, 0.0),
                         child: Text(
                           dateTimeFormat('MMMEd', widget.taskDeadline),
                           textAlign: TextAlign.start,
@@ -225,8 +225,8 @@ class _TasksBrokenDownScreenWidgetState
                         ),
                       ),
                       Padding(
-                        padding:
-                            const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 24.0),
+                        padding: const EdgeInsetsDirectional.fromSTEB(
+                            0.0, 0.0, 0.0, 24.0),
                         child: Builder(
                           builder: (context) {
                             final names = List.generate(
@@ -282,7 +282,8 @@ class _TasksBrokenDownScreenWidgetState
                 ),
               ),
               Padding(
-                padding: const EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 12.0),
+                padding:
+                    const EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 12.0),
                 child: FFButtonWidget(
                   onPressed: () async {
                     setState(() {
@@ -293,9 +294,10 @@ class _TasksBrokenDownScreenWidgetState
                   options: FFButtonOptions(
                     width: double.infinity,
                     height: 52.0,
-                    padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
-                    iconPadding:
-                        const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                    padding: const EdgeInsetsDirectional.fromSTEB(
+                        0.0, 0.0, 0.0, 0.0),
+                    iconPadding: const EdgeInsetsDirectional.fromSTEB(
+                        0.0, 0.0, 0.0, 0.0),
                     color: FlutterFlowTheme.of(context).secondaryBackground,
                     textStyle:
                         FlutterFlowTheme.of(context).titleMedium.override(
@@ -312,7 +314,8 @@ class _TasksBrokenDownScreenWidgetState
                 ),
               ),
               Padding(
-                padding: const EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 12.0),
+                padding:
+                    const EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 12.0),
                 child: FFButtonWidget(
                   onPressed: () async {
                     context.pushNamed(
@@ -334,16 +337,13 @@ class _TasksBrokenDownScreenWidgetState
                     );
                   },
                   text: 'Save Task',
-                  icon: const Icon(
-                    Icons.favorite_border,
-                    size: 15.0,
-                  ),
                   options: FFButtonOptions(
                     width: double.infinity,
                     height: 52.0,
-                    padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
-                    iconPadding:
-                        const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                    padding: const EdgeInsetsDirectional.fromSTEB(
+                        0.0, 0.0, 0.0, 0.0),
+                    iconPadding: const EdgeInsetsDirectional.fromSTEB(
+                        0.0, 0.0, 0.0, 0.0),
                     color: FlutterFlowTheme.of(context).primary,
                     textStyle: FlutterFlowTheme.of(context).titleLarge.override(
                           fontFamily: 'Montserrat',
